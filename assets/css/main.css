@@ -4,6 +4,10 @@
     --at-apply: "flex min-h-screen flex-col justify-start";
 }
 
+body{
+	--at-apply: "flex flex-col relative font-Onest whitespace-pre-line bg-white [--width-content:1320px] [--width-content-margin:12px] sm:[--width-content-margin:20px] 1200px:[--width-content-margin:32px]";
+}
+
 .grid-container {
     --at-apply: "grid";
 	grid-template-columns:
