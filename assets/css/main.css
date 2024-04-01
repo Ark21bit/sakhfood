@@ -1,0 +1,25 @@
+@import '@unocss/reset/tailwind.css';
+
+#__nuxt {
+    --at-apply: "flex min-h-screen flex-col justify-start";
+}
+
+.grid-container {
+    --at-apply: "grid";
+	grid-template-columns:
+		[full-start] minmax(var(--width-content-margin), 1fr)
+		[main-start] minmax(0, var(--width-content))
+		[main-end] minmax(var(--width-content-margin), 1fr) [full-end];		
+}
+
+.grid-container > * {
+	--at-apply: "col-[main]";
+}
+
+.wrapper {
+	--at-apply: "mx-auto w-[calc(100%-var(--width-content-margin)*2)] max-w-[--width-content]";
+}
+
+.container {
+	--at-apply:"max-w-[--width-content]";
+}
