@@ -42,7 +42,7 @@ const suffixIconName = computed(() => {
 const ui = {
     color: {
         green: {
-            solid: 'bg-primary text-white hover:bg-#21747C disabled:bg-inactive',
+            solid: 'bg-firmennyy text-white',
             outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
         },
     },
