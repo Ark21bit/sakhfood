@@ -30,6 +30,7 @@ export default defineConfig({
 		},
 	},
 	rules: [
-		[/^leading-([\.\d]+)$/, ([_, num]) => ({ "line-height": `${num}` })]
+		[/^leading-([\.\d]+)$/, ([_, num]) => ({ "line-height": `${num}` })],
+		[/^flex-([\.\d]+)$/, ([_, num]) => ({ "flex": `${num} ${num} 0%` })],
 	]
 })

@@ -10,6 +10,7 @@
 			</div>
 		</div>
 	</main>
+	<Footer class="mt-22.5"/>
 </template>
 <script lang="ts" setup>
 const restaraunts = [
