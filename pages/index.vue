@@ -3,6 +3,8 @@
 	<Catalog title="Каталог блюд" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все вкуснейшие блюда' }" :items="catalog" />
 	<Catalog title="Кухня" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все кухни мира' }" :items="catalog" />
 	<Restaurant class="mt-11 lg:mt-24" :restaraunts />
+	<Actions class="mt-11 lg:mt-24" />
+
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-11 lg:mt-24">
 		<div class="relative flex bg-#F4F8F5 items-center justify-between rounded-5 lg:rounded-10 px-5 lg:px-10 py-5.5 lg:py-8 gap-4 overflow-hidden">
 			<div class="flex flex-col gap-4 lg:gap-5 shrink-0">
