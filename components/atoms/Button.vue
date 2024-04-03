@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-type ButtonColor = 'green'
+type ButtonColor = 'green' | 'seryy'
 type ButtonSize = 'md'
 type ButtonVariant = 'outline' | 'solid'
 const props = defineProps({
@@ -45,6 +45,10 @@ const ui = {
             solid: 'bg-firmennyy text-white',
             outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
         },
+		seryy:{
+			solid:'bg-#ebf0f2 text-#718997',
+			outline:''
+		}
     },
     size: {
         md: 'text-4 lg:text-4.5 leading-0.8 -tracking-[.01em]',
