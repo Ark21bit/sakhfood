@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@nuxt/fonts": "^0.5.1",
-    "@unocss/nuxt": "^0.58.8"
+    "@unocss/nuxt": "^0.58.8",
+    "@vueuse/nuxt": "^10.9.0"
   }
 }
