@@ -1,5 +1,5 @@
 <template>
-	<Banner />
+	<Banner class="mt-5" />
 	<Catalog title="Выберите категорию" class="mt-10 lg:mt-18" :link="{ to: '/', text: 'Все категории еды' }" :items="catalog" />
 	<Catalog title="Каталог блюд" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все вкуснейшие блюда' }" :items="catalog" />
 	<Catalog title="Кухня" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все кухни мира' }" :items="catalog" />

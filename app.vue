@@ -1,4 +1,5 @@
 <template>
+	<Header></Header>
 	<main class="grid-container grow auto-rows-min">
 		<NuxtPage />
 	</main>

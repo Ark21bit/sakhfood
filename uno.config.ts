@@ -28,6 +28,9 @@ export default defineConfig({
 			"seryy": "#80929c",
 			"firmennyy": "#50a80a",
 		},
+		boxShadow:{
+			header:'0 9px 20px 0 rgba(166, 166, 166, 0.05), 0 37px 37px 0 rgba(166, 166, 166, 0.04), 0 83px 50px 0 rgba(166, 166, 166, 0.03), 0 147px 59px 0 rgba(166, 166, 166, 0.01), 0 230px 64px 0 rgba(166, 166, 166, 0);'
+		}
 	},
 	rules: [
 		[/^leading-([\.\d]+)$/, ([_, num]) => ({ "line-height": `${num}` })],
