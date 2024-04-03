@@ -1,9 +1,7 @@
 <template>
-	<Header></Header>
-	<main class="grid-container grow auto-rows-min">
+	<NuxtLayout>
 		<NuxtPage />
-	</main>
-	<Footer class="mt-10 lg:mt-22.5" />
+	</NuxtLayout>
 </template>
 <script lang="ts" setup>
 </script>
