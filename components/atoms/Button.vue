@@ -1,90 +1,98 @@
 <template>
-    <component :is="tag" :class="buttonClass">
-        <slot name="prefix">
-            <span v-if="prefixIcon" :class="[iconClass, prefixIcon]"></span>
-        </slot>
-        <slot />
-        <slot name="suffix">
-            <span v-if="suffixIconName" :class="[iconClass, suffixIconName]"></span>
-        </slot>
-    </component>
+	<component :is="tag" :class="buttonClass">
+		<slot name="prefix">
+			<span v-if="prefixIcon" :class="[iconClass, prefixIcon]"></span>
+		</slot>
+		<slot />
+		<slot name="suffix">
+			<span v-if="suffixIconName" :class="[iconClass, suffixIconName]"></span>
+		</slot>
+	</component>
 </template>
 
 <script lang="ts" setup>
-type ButtonColor = 'green' | 'seryy'
-type ButtonSize = 'md'
+type ButtonColor = 'green' | 'seryy' | 'white'
+type ButtonSize = 'sm' | 'md'
 type ButtonVariant = 'outline' | 'solid'
 const props = defineProps({
-    tag: { type: [Object, String], default: 'button' },
-    color: { type: String as PropType<ButtonColor>, default: 'green' },
-    size: { type: String as PropType<ButtonSize>, default: 'md' },
-    variant: { type: String as PropType<ButtonVariant>, default: 'solid' },
-    class: { type: [String, Object, Array], default: undefined },
-    prefixIcon: String,
-    suffixIcon: String,
-    loading: Boolean,
-    loadingIcon: { type: String, default: '' },
-    padded: { type: Boolean, default: false },
+	tag: { type: [Object, String], default: 'button' },
+	color: { type: String as PropType<ButtonColor>, default: 'green' },
+	size: { type: String as PropType<ButtonSize>, default: 'md' },
+	variant: { type: String as PropType<ButtonVariant>, default: 'solid' },
+	class: { type: [String, Object, Array], default: undefined },
+	prefixIcon: String,
+	suffixIcon: String,
+	loading: Boolean,
+	loadingIcon: { type: String, default: '' },
+	padded: { type: Boolean, default: false },
 })
 
 const slots = defineSlots<{
-    default: any,
-    prefix?: any,
-    suffix?: any,
-    loading?: any,
+	default: any,
+	prefix?: any,
+	suffix?: any,
+	loading?: any,
 }>()
 
 const suffixIconName = computed(() => {
-    if (props.loading) return props.loadingIcon
-    return props.suffixIcon
+	if (props.loading) return props.loadingIcon
+	return props.suffixIcon
 })
 
 const ui = {
-    color: {
-        green: {
-            solid: 'bg-firmennyy text-white',
-            outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
-        },
-		seryy:{
-			solid:'bg-#ebf0f2 text-#718997',
-			outline:''
+	color: {
+		green: {
+			solid: 'bg-firmennyy text-white',
+			outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
+		},
+		seryy: {
+			solid: 'bg-#ebf0f2 text-#718997',
+			outline: ''
+		},
+		white: {
+			solid: 'bg-white text-firmennyy',
+			outline: ''
 		}
-    },
-    size: {
-        md: 'text-4 lg:text-4.5 leading-0.8 -tracking-[.01em]',
-    },
-    gap: {
-        md: 'gap-1.5',
-    },
-    padding: {
-        md: 'py-3.5 lg:py-3.75 px-7',
-    },
-    base: 'flex shrink-0 items-center',
-    icon: {
-        base: "shrink-0",
-        size: {
-            md: "text-4",
-        }
-    },
-	rounded:'rounded-3 lg:rounded-3.5',
-    font: "font-500"
+	},
+	size: {
+		sm: 'text-4 lg:text-4 leading-0.8 -tracking-0.01em',
+		md: 'text-4 lg:text-4.5 leading-0.8 -tracking-0.01em',
+	},
+	gap: {
+		sm: 'gap-1.5',
+		md: 'gap-1.5',
+	},
+	padding: {
+		sm: 'py-3.5 lg:py-3.75 px-7',
+		md: 'py-3.5 lg:py-3.75 px-7',
+	},
+	base: 'flex shrink-0 items-center',
+	icon: {
+		base: "shrink-0",
+		size: {
+			sm: "text-4",
+			md: "text-4",
+		}
+	},
+	rounded: 'rounded-3 lg:rounded-3.5',
+	font: "font-500"
 }
 
 const iconClass = computed(() => {
-    return [ui.icon.base, ui.icon.size[props.size]]
+	return [ui.icon.base, ui.icon.size[props.size]]
 })
 
 const buttonClass = computed(() => {
-    const variant = ui.color?.[props.color]?.[props.variant]
-    return [
-        `${ui.base} ${!slots?.suffix && !slots?.prefix ? 'justify-center' : 'justify-between'}`,
-        ui.font,
+	const variant = ui.color?.[props.color]?.[props.variant]
+	return [
+		`${ui.base} ${!slots?.suffix && !slots?.prefix ? 'justify-center' : 'justify-between'}`,
+		ui.font,
 		ui.rounded,
-        ui.size[props.size],
-        ui.gap[props.size],
-        !props.padded && ui.padding[props.size],
-        variant,
-        props.class
-    ]
+		ui.size[props.size],
+		ui.gap[props.size],
+		!props.padded && ui.padding[props.size],
+		variant,
+		props.class
+	]
 })
 </script>
