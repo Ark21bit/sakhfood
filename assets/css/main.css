@@ -4,6 +4,10 @@
     --at-apply: "flex min-h-screen flex-col justify-start";
 }
 
+html{
+	--at-apply: "leading-1.1 -tracking-0.02em"
+}
+
 body{
 	--at-apply: "flex flex-col relative font-Onest whitespace-pre-line bg-white [--width-content:1320px] [--width-content-margin:12px] sm:[--width-content-margin:20px] 1200px:[--width-content-margin:32px]";
 }
@@ -30,4 +34,4 @@ body{
 
 .gradient-default-img{
 	background: radial-gradient(98.77% 98.77% at 50.57% 50%, rgb(245, 246, 242) 0%, rgb(227, 228, 224) 100%);
-}
+} 

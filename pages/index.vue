@@ -1,5 +1,5 @@
 <template>
-	<Banner/>
+	<Banner />
 	<Catalog title="Выберите категорию" class="mt-10 lg:mt-18" :link="{ to: '/', text: 'Все категории еды' }" :items="catalog" />
 	<Catalog title="Каталог блюд" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все вкуснейшие блюда' }" :items="catalog" />
 	<Catalog title="Кухня" class="mt-11 lg:mt-24" :link="{ to: '/', text: 'Все кухни мира' }" :items="catalog" />
@@ -9,25 +9,25 @@
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-11 lg:mt-24">
 		<div class="relative flex bg-#F4F8F5 items-center justify-between rounded-5 lg:rounded-10 px-5 lg:px-10 py-5.5 lg:py-8 gap-4 overflow-hidden">
 			<div class="flex flex-col gap-4 lg:gap-5 shrink-0">
-				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 leading-1.1 -tracking-0.02em max-w-73">Присоединяйте свой ресторан</h2>
-				<p class="text-seryy text-4.5 leading-1.2 -tracking-0.02em max-lg:max-w-43 max-w-73">Привлекайте новых посетителей и расширяйте зону продажи</p>
+				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 max-w-73">Присоединяйте свой ресторан</h2>
+				<p class="text-seryy text-4.5 leading-1.2 max-lg:max-w-43 max-w-73">Привлекайте новых посетителей и расширяйте зону продажи</p>
 				<Button class="w-fit">Подключить</Button>
 			</div>
 			<img class="mix-blend-darken h-50 lg:h-47 max-lg:(absolute translate-x-1/3 right-0)" src="/imgs/join-your-restaurant1.png" alt="">
 		</div>
 		<div class="relative flex bg-#F4F8F5 items-center justify-between rounded-5 lg:rounded-10 px-5 lg:px-10 py-5.5 lg:py-8 gap-4 overflow-hidden">
 			<div class="flex flex-col gap-4 lg:gap-5 shrink-0">
-				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 leading-1.1 -tracking-0.02em max-w-73">Займёмся доставкой ваших заказов</h2>
-				<p class="text-seryy text-4.5 leading-1.2 -tracking-0.02em max-lg:max-w-43 max-w-73">Предоставим курьеров и эффективную систему доставки</p>
+				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 max-w-73">Займёмся доставкой ваших заказов</h2>
+				<p class="text-seryy text-4.5 leading-1.2 max-lg:max-w-43 max-w-73">Предоставим курьеров и эффективную систему доставки</p>
 				<Button class="w-fit">Оставить заявку</Button>
 			</div>
-			<img class="mix-blend-darken h-43 lg:h-47  max-lg:(absolute translate-x-1/3 right-0)" src="/imgs/join-your-restaurant2.png" alt="">
+			<img class="mix-blend-darken h-43 lg:h-47 max-lg:(absolute translate-x-1/3 right-0)" src="/imgs/join-your-restaurant2.png" alt="">
 		</div>
 
 		<div class="relative flex flex-col sm:flex-row bg-#F4F8F5 lg:items-center justify-between rounded-5 lg:rounded-10 px-5 lg:px-10 py-5.5 lg:py-8 gap-4 col-span-full">
 			<div class="flex flex-col gap-4 lg:gap-5">
-				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 leading-1.1 -tracking-0.02em max-w-92">Проще чем забронировать столик в ресторане</h2>
-				<p class="text-seryy text-4.5 leading-1.2 -tracking-0.02em max-w-120">Еда уже почти у вас дома! Скачайте приложение и сделайте заказ в любимом ресторане прямо сейчас</p>
+				<h2 class="text-tekstovyy text-6 lg:text-7 font-700 max-w-92">Проще чем забронировать столик в ресторане</h2>
+				<p class="text-seryy text-4.5 leading-1.2 max-w-120">Еда уже почти у вас дома! Скачайте приложение и сделайте заказ в любимом ресторане прямо сейчас</p>
 				<Button class="w-fit">
 					Установить приложение
 					<template #suffix>

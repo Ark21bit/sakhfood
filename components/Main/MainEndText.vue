@@ -1,6 +1,6 @@
 <template>
-	<div class="relative flex flex-col gap-5 -tracking-0.02em overflow-hidden">
-		<h2 class="text-tekstovyy text-8.5 font-700 leading-1.1">Бесплатная доставка еды 24 часа домой и в офис</h2>
+	<div class="relative flex flex-col gap-5 overflow-hidden">
+		<h2 class="text-tekstovyy text-8.5 font-700">Бесплатная доставка еды 24 часа домой и в офис</h2>
 		<p class="text-#455862 text-4.5 leading-1.45 [&>span]:(font-500 text-firmennyy)" :class="{ 'max-h-90': !isShow }">
 			<span>Доставка еды</span> — это самый удобный способ попробовать блюда разных кухонь мира быстро и без хлопот, ведь SakhFood привозит заказы 24 часа 7 дней в неделю. Термосумка сохраняет тепло горячих блюд, поддерживает оптимальную температуру для прохладительных напитков. Вы получаете
 			именно то, что
