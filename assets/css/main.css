@@ -27,3 +27,7 @@ body{
 .container {
 	--at-apply:"max-w-[--width-content]";
 }
+
+.gradient-default-img{
+	background: radial-gradient(98.77% 98.77% at 50.57% 50%, rgb(245, 246, 242) 0%, rgb(227, 228, 224) 100%);
+}
