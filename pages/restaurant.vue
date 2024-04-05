@@ -1,5 +1,5 @@
 <template>
-	<Reviews class="mt-8 max-w-190" />
+	<RestaurantBannerDescription />
 </template>
 
 <script setup lang="ts">
