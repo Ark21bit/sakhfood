@@ -46,11 +46,11 @@ const ui = {
 			outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
 		},
 		green: {
-			solid: 'bg-firmennyy text-white',
-			outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy',
+			solid: 'bg-firmennyy text-white hover:bg-#61BF16',
+			outline: 'bg-transparent ring-1.5 ring-inset ring-firmennyy/50 text-firmennyy hover:(bg-#50A80A/20 ring-transparent) ',
 		},
 		seryy: {
-			solid: 'bg-#ebf0f2 text-#718997',
+			solid: 'bg-#ebf0f2 text-#718997 hover:bg-#DFE6E9',
 			outline: ''
 		},
 		white: {
@@ -73,7 +73,7 @@ const ui = {
 		sm: 'py-3.5 lg:py-3.75 px-7',
 		md: 'py-3.5 lg:py-3.75 px-7',
 	},
-	base: 'flex shrink-0 items-center justify-center',
+	base: 'flex shrink-0 items-center justify-center transition-box-shadow,background-color',
 	icon: {
 		base: "shrink-0",
 		size: {

@@ -3,7 +3,7 @@
 </template>
 <style>
 .swiper-pagination-bullet {
-	--at-apply: 'bg-black/20 w-5.5 lg:w-7.5 h-1 lg:h-1.25 rounded-full transition-width duration-600 flex overflow-hidden';
+	--at-apply: 'bg-black/20 w-5.5 lg:w-7.5 h-1 lg:h-1.25 rounded-full duration-600 flex overflow-hidden hover:bg-black/50 transition-[background,width]';
 }
 
 .swiper-pagination-bullet-active {

@@ -4,11 +4,8 @@
 	<header ref="header" class="grid-container shadow-header top-0 left-0 w-full z-50 bg-white" :class="{ 'fixed': isMounted }">
 		<div class="grid grid-cols-[auto_1fr_auto] lg:grid-cols-[auto_1fr_auto_auto] items-center gap-1.5 lg:gap-y-4 lg:gap-x-8 py-4">
 			<NuxtLink to="/">
-				<picture>
-					<source srcset="/imgs/logo.svg" media="(min-width: 1024px)">
-					<source srcset="/imgs/logo-m.svg">
-					<img class="w-11 lg:w-60.5" src="/imgs/logo.svg" alt="">
-				</picture>
+				<Logo class="text-firmennyy hover:text-#61BF16 transition-color max-lg:hidden" />
+				<img class="w-11 lg:w-60.5 lg:hidden" src="/imgs/logo-m.svg" alt="">
 			</NuxtLink>
 			<Button class="grow max-lg:col-start-2 max-lg:row-start-2" color="seryy">Найти ресторан или блюдо</Button>
 			<Button>Укажите адрес доставки</Button>

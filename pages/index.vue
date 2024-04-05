@@ -40,8 +40,8 @@
 			</div>
 			<div class="flex items-center gap-2.5 lg:gap-7.5 shrink-0">
 				<div class="flex flex-col gap-2">
-					<NuxtLink to="/"><img width="135" height="40" src="/imgs/app-store.svg" /></NuxtLink>
-					<NuxtLink to="/"><img width="135" height="40" src="/imgs/google-play.svg" /></NuxtLink>
+					<NuxtLink to="/"><GooglePlay class="text-black transition-color hover:text-firmennyy"/></NuxtLink>
+					<NuxtLink to="/"><AppStore class="text-black transition-color hover:text-firmennyy"/></NuxtLink>
 				</div>
 				<img width="123" height="123" class="size-21.5 lg:size-30.75" src="/imgs/qr-code.svg" />
 			</div>

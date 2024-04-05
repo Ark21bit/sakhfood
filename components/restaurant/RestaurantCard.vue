@@ -1,6 +1,7 @@
 <template>
-	<div :class="time.open ? 'bg-white' : 'bg-#e0e6e4'" class="flex gap-3 lg:gap-4.5 shadow-[0_3px_16px_0] lg:shadow-[0_3px_20px_0] shadow-black/4 p-3 lg:p-4 rounded-4 lg:rounded-5 items-center">
+	<NuxtLink to="/" :class="time.open ? 'bg-white' : 'bg-#e0e6e4'" class="flex gap-3 lg:gap-4.5 shadow-[0_3px_16px_0] lg:shadow-[0_3px_20px_0] shadow-black/4 ring-2 ring-transparent ring-inset hover:(shadow-[0_6px_20px_0] shadow-black/15 ring-firmennyy/50) transition-shadow p-3 lg:p-4 rounded-4 lg:rounded-5 items-center">
 		<div class="shrink-0 relative">
+
 			<div class="flex gap-1 flex-wrap absolute inset-1.25 lg:inset-1.5 items-start">
 				<Tag v-if="bestPrice" size="sm">Лучшая цена</Tag>
 			</div>
@@ -33,7 +34,7 @@
 			</div>
 			<p v-if="freeDelivery" class="text-seryy text-3.25 -mt-0.875 max-lg:hidden">Бесплатная доставка</p>
 		</div>
-	</div>
+	</NuxtLink>
 </template>
 
 <script lang="ts" setup>
