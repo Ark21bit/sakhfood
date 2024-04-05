@@ -7,4 +7,14 @@ export default defineNuxtConfig({
 		{ path: "~/components/atoms", pathPrefix: false },
 		"~/components",
 	],
+	fonts: {
+		families: [
+			{
+				name: 'Onest',
+				styles: ['normal'],
+				provider: 'google',
+				weights: [400, 500, 700],
+			}
+		]
+	}
 })
