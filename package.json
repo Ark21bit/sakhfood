@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@formkit/tempo": "^0.0.19",
     "nuxt": "^3.11.1",
     "swiper": "^11.1.0",
     "vue": "^3.4.21",
